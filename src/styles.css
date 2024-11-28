@@ -1,1 +1,82 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    font-family: 'Roboto', sans-serif; /* Import a modern font like Roboto */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0; /*remove default margin*/
+  }
+  
+  .container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px; /* Added max width for responsiveness */
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: 500;
+  }
+  
+  .input-area {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center; /* Align items vertically */
+  }
+  
+  input[type="url"] {
+    flex-grow: 1; /* Makes input expand to fill available space */
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px; /* Rounded corners only on left and right */
+    margin-right: 5px;
+  }
+  
+  
+  button {
+    padding: 12px 20px;
+    background-color: #007bff; /* Blue button */
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0; /* Rounded corners on right */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  button:hover {
+    background-color: #0069d9; /* Darker blue on hover */
+  }
+  
+  .output-area {
+    margin-top: 20px;
+  }
+  
+  #shortenedUrl {
+    font-weight: 500;
+    color: #28a745; /* Green for shortened URL */
+    word-break: break-all; /* Allow long URLs to wrap */
+  }
+  
+  #loading {
+    margin-left: 10px; /* Space between button and loading indicator */
+    color: #007bff; /* Same color as button */
+    display: none;
+    font-weight: bold;
+  }
+  
+  #loading.show {
+    display: inline-block;
+  }
+  
+  /* Responsive adjustments for smaller screens */
+  @media (max-width: 350px){
+      input[type="url"] {
+          width: 100%; /* Full width for smaller screens */
+      }
+  }

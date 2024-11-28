@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  apiUrl: 'https://5xozgh1zfh.execute-api.us-east-2.amazonaws.com/producao/create', //Use only the base URL, not the specific endpoint path
+  apiKey: 'https://5xozgh1zfh.execute-api.us-east-2.amazonaws.com/' //Place your API key here
 };
 
 /*

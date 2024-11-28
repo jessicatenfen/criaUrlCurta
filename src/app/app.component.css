@@ -1,0 +1,91 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+  margin: 0;
+}
+
+.container {
+  background-color: #fff;
+  padding: 30px; /* Reduced padding for more space */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  min-width: 400px; /* Ensure minimum width */
+  max-width: 600px;
+}
+
+h1 {
+  margin-bottom: 30px; /* Increased margin for better spacing */
+  color: #333;
+  font-weight: 500;
+  font-size: 2.5em;
+}
+
+.input-area {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  width: 100%; /* Makes the input area take full container width */
+}
+
+input[type="url"] {
+  flex-grow: 1;
+  padding: 15px; /* Slightly reduced padding */
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  margin-right: 5px;
+  font-size: 16px;
+  width: 100%; /*Ensures input takes up all available space*/
+  box-sizing: border-box; /* Prevents padding from increasing element width */
+}
+
+button {
+  padding: 14px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0069d9;
+}
+
+.output-area {
+  margin-top: 20px;
+  font-size: 16px;
+  min-height: 80px; /* Added minimum height */
+}
+
+.loading{
+  color: #007bff; /* Same color as button */
+  font-weight: bold;
+  margin-left: 10px;
+  display: block; /* Ensures these messages appear on their own line */
+}
+
+.error{
+  color: #c20909; /* Same color as button */
+  font-weight: bold;
+  margin-left: 10px;
+  display: block; /* Ensures these messages appear on their own line */
+}
+
+#shortenedUrl {
+  font-weight: 500;
+  color: #28a745;
+  word-break: break-all;
+}
+
+/* Responsive adjustments */
+@media (max-width: 450px) { /* Adjusted breakpoint */
+  .container {
+      max-width: 90vw; /* Uses almost all available width on smaller screens */
+  }
+}

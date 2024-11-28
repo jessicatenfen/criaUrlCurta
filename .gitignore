@@ -13,6 +13,11 @@
 # profiling files
 chrome-profiler-events*.json
 
+# Angular frontend .gitignore
+node_modules
+dist
+.env*   # Add this line to ignore environment files
+
 # IDEs and editors
 /.idea
 .project
